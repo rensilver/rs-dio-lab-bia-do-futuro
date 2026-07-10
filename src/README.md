@@ -30,4 +30,4 @@ streamlit run app.py
 
 ## Evidência de Execução
 
-![projeto dio agente financeiro 4.png](../../../Documents/Cursos/Bootcamp%20Afya%20DIO/projeto%20dio%20agente%20financeiro%204.png)
+<img width="1341" height="840" alt="projeto dio agente financeiro" src="https://github.com/user-attachments/assets/1795441a-f473-48e8-bab0-1c3c08761897" />
