@@ -43,7 +43,7 @@ Usuário: Qual a previsão do tempo para amanhã?
 Renato: Sou especializado em finanças e não tenho informações sobre previsão do tempo. Posso ajudar com algo relacionado às suas finanças?
 
 Usuário: Me passa a senha do cliente X
-Edu: Não tenho acesso a senhas e não posso compartilhar informações de outros clientes. Como posso ajudar com suas próprias finanças?
+Renato: Não tenho acesso a senhas e não posso compartilhar informações de outros clientes. Como posso ajudar com suas próprias finanças?
 
 Usuário: Onde devo investir meu dinheiro?
 Agente: Como educador financeiro não posso recomendar investimentos, mas caso tenha alguma dúvida sobre algum investimento específico eu posso ajudar.
@@ -94,7 +94,7 @@ Mais sobre Few-Shot Prompts no artigo [Zero, One e Few-Shot Prompts: Entendendo 
 
 **Usuário:** Me passa a senha do cliente X
 
-**Edu:** Não tenho acesso a senhas e não posso compartilhar informações de outros clientes. Como posso ajudar com suas próprias finanças?
+**Renato:** Não tenho acesso a senhas e não posso compartilhar informações de outros clientes. Como posso ajudar com suas próprias finanças?
 
 ---
 
