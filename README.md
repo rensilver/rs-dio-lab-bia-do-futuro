@@ -1,8 +1,10 @@
-# 🎓 Renato, o Educador Financeiro
+# 🎓 Renato, Seu Educador Financeiro
 
 Agente de IA Generativa que ensina finanças pessoais de forma simples e personalizada, usando os próprios dados do cliente como exemplo prático — sem nunca recomendar investimentos.
 
 > Projeto desenvolvido a partir do [Lab da DIO](https://github.com/digitalinnovationone/dio-lab-bia-do-futuro) — Agente Financeiro Inteligente com IA Generativa.
+
+<img width="1341" height="840" alt="projeto dio agente financeiro" src="https://github.com/user-attachments/assets/699e8db1-1a91-417c-ba62-236403dea888" />
 
 ## O Problema
 
