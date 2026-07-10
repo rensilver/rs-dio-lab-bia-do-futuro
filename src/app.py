@@ -1,5 +1,11 @@
-import pandas as pd
 import json
+import requests
+import pandas as pd
+import streamlit as st
+
+# =========== CONFIGURAÇÃO ===========
+OLLAMA_URL = "http://localhost:11434/api/generate"
+MODELO = "llama3.2"
 
 # =========== CARREGAR DADOS ===========
 perfil = json.load(open('../data/perfil_investidor.json'))
@@ -24,7 +30,7 @@ PRODUTOS DISPONÍVEIS:
 """
 
 # =========== SYSTEM PROMPT ===========
-SYSTEM_PROMPT = """Você é o Edu, um educador financeiro amigável e didático.
+SYSTEM_PROMPT = """Você é o Renato, um educador financeiro amigável e didático.
 
 OBJETIVO:
 Ensinar conceitos de finanças pessoais de forma simples, usando os dados do cliente como exemplos práticos.
@@ -39,3 +45,24 @@ o seu papel de educador financeiro;
 - Sempre pergunte se o cliente entendeu;
 - Responda de forma sucinta e direta, com no máximo 3 parágrafos.
 """
+
+# =========== CHAMAR OLLAMA ===========
+def perguntar(msg):
+    prompt = f"""
+    {SYSTEM_PROMPT}
+    
+    CONTEXTO DO CLIENTE:
+    {contexto}
+    
+    Pergunta: {msg}
+"""
+    r = requests.post(OLLAMA_URL, json={"model": MODELO, "prompt": prompt, "stream": False})
+    return r.json()['response']
+
+# =========== INTERFACE ===========
+st.title("🎓 Renato, Seu Educador Financeiro")
+
+if pergunta := st.chat_input("Sua dúvida sobre finanças..."):
+    st.chat_message("user").write(pergunta)
+    with st.spinner("..."):
+        st.chat_message("assistant").write(perguntar(pergunta))
