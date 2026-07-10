@@ -20,7 +20,7 @@
 > - "Me explica o que é Tesouro Selic"
 
 ### 4. Diferencial (30 seg)
-> Diferente de chatbots genéricos, o Edu usa SEUS dados como exemplo. Isso torna o aprendizado concreto.
+> Diferente de chatbots genéricos, o Renato usa SEUS dados como exemplo. Isso torna o aprendizado concreto.
 > E o melhor: roda 100% local, sem custo e sem enviar seus dados pra ninguém."
 
 ---
